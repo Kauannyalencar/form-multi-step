@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Multi-step form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container-fluid">
+    <main class="row">
+        <section data-index="1" class="registration col-lg-5 col-sm-8 col-md-6 col-xs-8 p-4">
+            <h1>Register</h1>
+            <form action="#">
+                <div class="form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="enter your name" required>
+                    <label for="email" id="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="yourname21@gmail.com" required>
+                </div>
+                <button type="submit" class="submit-btn">Continue</button>
+            </form>
+        </section>
+        <section data-index="2" class="interest-topics col-lg-5 col-sm-8 col-md-8 col-xs-8 p-4">
+            <h1>Which topics you are interested in?</h1>
+            <div class="topics">
+                <ul class="list">
+                    <li id="software-development">Software Development</li>
+                    <li id="user-experince">User Experience</li>
+                    <li id="graphic-design">Graphic Design</li>
+                </ul>
+            </div>
+            <button type="submit" class="submit-btn">Continue</button>
+        </section>
+        <section data-index="3" class="summary col-lg-5 col-sm-8 col-md-8 col-xs-8 p-4">
+            <h1>Summary</h2>
+                <div class="user-infor">
+                    <p>Name: <span class="user-name"></span></p>
+                    <p>Email: <span class="user-email"> </span></p>
+                </div>
+                <div class="user-topics ">
+                    <p>Topics:</p>
+                    <ul class="topics-list">
+                      
+                    </ul>
+                </div>
+                <button type="submit" class="submit-btn">Confirm</button>
+        </section>
+        <div class="footer mx-auto col-lg-5 col-sm-8 col-md-8 col-xs-8 p-4">
+            <p>Step <span class="step">1</span> of <span class="final-step">3</span></p>
+            <div class="steps">
+                <span class="step-btn active"></span>
+                <span class="step-btn"></span>
+                <span class="step-btn"></span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
