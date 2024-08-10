@@ -18,14 +18,16 @@ topicsList.forEach(item => {
 })
 
 function toggleSection(section, nextSection) {
-    
+    const step = document.querySelector(".step")
     if (nextSection.dataset.index === topicsSect.dataset.index) {
         sectionIndex +=1
+        step.textContent = sectionIndex
         section.style.display = "none"
         nextSection.style.display = "flex"
         steps[sectionIndex - 1].classList.add("active")
     } else if (nextSection.dataset.index === summary.dataset.index) {
         sectionIndex += 1
+        step.textContent = sectionIndex
         section.style.display = "none"
         nextSection.style.display = "flex"
         steps[sectionIndex - 1].classList.add("active")
