@@ -1,5 +1,5 @@
 <h1 align="center">Multi-step Register Form</h1>    
-<p>Desafio do Dev Challenges, site com diversos desafios do frontend para ajudar no desenvolvimento de programadires.</p>
+<p>Desafio do Dev Challenges, site com diversos desafios do frontend para ajudar no desenvolvimento de programadores.</p>
 <h3>Sobre o projeto</h3>
 <p>Form de registro com um passo a passo para poder concluir o registro.</p>
 <h4>Features</h4>
